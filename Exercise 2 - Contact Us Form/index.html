@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+
+  <body>
+    <form style="font-size: 18px; font-family: gilroy">
+      <h1>Contact US</h1>
+      <label for="contact">Name:</label><br />
+      <input type="text" id="contact" placeholder="Enter Name" /><br /><br />
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        required
+      /><br /><br />
+      <label for="pn">Phone number:</label><br />
+      <input
+        type="tel"
+        id="pn"
+        placeholder="Enter PhoneNumber"
+        maxlength="10"
+        required
+      /><br /><br />
+      <label for="msg">Message:</label><br />
+      <textarea id="msg" rows="5" cols="30" placeholder="Typing..."></textarea
+      ><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
