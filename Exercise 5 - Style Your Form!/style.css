@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #dadada;
+}
+form h1 {
+  text-align: center;
+  margin-bottom: 1.3vw;
+  font-size: 2vw;
+}
+form {
+  font-size: 17.2px;
+  text-align: start;
+  padding: 3vw;
+  width: 30%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: -3px 5px 10px 1px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+input {
+  border-radius: 3px;
+  margin-top: 3px;
+  height: 30px;
+  border: 1.56px solid #dadada;
+  width: 100%;
+  padding-left: 0.5vw;
+}
+textarea {
+  border: 1.56px solid #dadada;
+  width: 100%;
+  padding-top: 0.3vw;
+  padding-left: 0.5vw;
+  margin-top: 3px;
+
+}
+button {
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1vw;
+  color: white;
+  background-color: lightseagreen;
+  height: 36px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+}
+form:hover{
+    transform: perspective(900px) translateY(-5%) rotateX(10deg) translateZ(0);
+    box-shadow: -20px 35px 32px -8px rgba(3, 3, 3, 0.75);
+}
+
+button:hover{
+    background-color: rgb(36, 217, 208);
+    color: black;
+    cursor: pointer;
+    scale: 1.02;
+}
