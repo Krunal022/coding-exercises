@@ -1,0 +1,591 @@
+@mixin light-weight-font {
+  opacity: 0.2;
+  font-weight: 900;
+  font-size: 1.22rem;
+}
+
+// CSS BoilerPlate
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: syne;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 1rem;
+  font-family: chillax;
+
+  p {
+    font-family: gilroy;
+  }
+}
+
+// Main Parent :
+main {
+  width: 100%;
+  border: 1.58px solid rgba(0, 0, 0, 0.824);
+  padding: 1rem;
+}
+
+//Navigation Bar
+nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 1.5rem;
+
+  a {
+    font-size: 2.2rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  .links {
+    display: none;
+  }
+  button {
+    border-radius: 1rem;
+    border: 0.5px solid rgb(74, 74, 74);
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+// Section 1  ViewOne 1 :
+.view-1 {
+  // margin-top: 3rem;
+  padding: 0 1rem;
+  width: 100%;
+  gap: 1.33rem;
+  flex-direction: column;
+  display: flex;
+
+  .text {
+    h6 {
+      font-family: gilroy;
+      margin-top: 1.33rem;
+      color: rgba(0, 0, 0, 0.836);
+      font-weight: 400;
+      font-weight: 100;
+      font-size: 1.2rem;
+    }
+    h1 {
+      line-height: 0.95;
+      letter-spacing: 0.8;
+      font-weight: 400;
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+  .video {
+    aspect-ratio: 1/1;
+    width: 100%;
+    video {
+      border-radius: 1rem;
+
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+// Section 2  ViewTwo 2 :
+.view-2 {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+
+  // Top_Heading..
+  .top-heading {
+    flex-direction: column;
+    display: flex;
+    gap: 1.2rem;
+
+    p {
+      @include light-weight-font();
+    }
+    h1 {
+      line-height: 0.95;
+      letter-spacing: 0.8;
+      font-weight: 400;
+      width: 90%;
+      font-size: 2.7rem;
+    }
+    button {
+      border-radius: 0.8rem;
+      width: 7rem;
+      margin-top: 2rem;
+      border: 0.3rem;
+      color: rgb(253, 216, 147);
+      background-color: black;
+      padding: 0.8rem;
+    }
+  }
+
+  // Row
+
+  // Bottom_Heading..
+  .bottom-heading {
+    margin-top: 1.5rem;
+
+    p {
+      letter-spacing: -5;
+      line-height: 0.99;
+      color: rgba(0, 0, 0, 0.767);
+      margin-top: 0.8rem;
+      font-size: 1.1rem;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    img {
+      border-radius: 1rem;
+      height: auto;
+      object-fit: cover;
+      width: 90%;
+    }
+  }
+}
+
+// Section 3 ViewThree 3:
+.view-3 {
+  padding: 1rem;
+  width: 100%;
+  // height: 100vh;
+
+  // background-color: rebeccapurple;
+
+  .text {
+    p {
+      @include light-weight-font();
+    }
+    h1 {
+      margin-top: 1rem;
+      line-height: 0.95;
+      letter-spacing: -3px;
+      font-weight: 400;
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+  h2 {
+    font-family: gilroy;
+    margin-top: 1.33rem;
+
+    color: rgba(0, 0, 0, 0.731);
+    font-weight: 400;
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+}
+
+// Section 4 ViewFour 4:
+.view-4 {
+  width: 100%;
+  padding: 1rem;
+
+  .leftside {
+    h1 {
+      display: none;
+      // @include light-weight-font();
+    }
+  }
+  .rightside {
+    margin-top: -2rem;
+    // background-color: rebeccapurple;
+    img {
+      width: 100px;
+      object-fit: contain;
+      height: auto;
+      // background-color: rebeccapurple;
+    }
+    h1 {
+      font-weight: 300;
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+    p {
+      color: rgba(0, 0, 0, 0.772);
+      font-size: 1.22rem;
+      // border-bottom: 2px solid #dadada;
+    }
+  }
+}
+
+// Section 5 Footer :
+footer {
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+  display: flex;
+
+  .fylla {
+    .button {
+      // justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+      display: flex;
+      // width: 50%;
+
+      p {
+        height: 2.5rem;
+        width: 2.5rem;
+        text-align: center;
+        padding: 0.5rem;
+        margin-right: 2rem;
+        border-radius: 50%;
+        border: 1px solid black;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .Pages {
+    button {
+      color: white;
+      background-color: black;
+      margin-top: 2rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 0.6rem 2rem;
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-top: 0.3rem;
+    margin: 1.6rem 0;
+    font-weight: 400;
+    // gap: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .row {
+    width: auto;
+    height: 1.5px;
+    background-color: #363535;
+  }
+}
+
+// MediaQueries NavBar
+@media (min-width: 1020px) {
+  nav {
+    html {
+      font-size: clamp(16px, 1vw, 20px);
+    }
+
+    a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: black;
+    }
+    .moon {
+      display: none;
+    }
+
+    padding: 1.5rem 3rem;
+    .links {
+      display: block;
+      // gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+      a {
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        font-weight: 500;
+        font-family: gilroy;
+        color: black;
+        text-decoration: none;
+      }
+      button {
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        margin-right: 2rem;
+        padding: 1rem 4rem;
+        text-wrap: nowrap;
+        // text-align: end;
+      }
+    }
+  }
+}
+// MediaQueries View-1
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+
+  .view-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .text {
+      width: 60%;
+      h6 {
+        color: rgba(0, 0, 0, 0.785);
+        font-size: 1.7rem;
+        font-weight: 100;
+        width: 70%;
+      }
+      h1 {
+        font-size: 6.5rem;
+        font-weight: 100;
+        opacity: 0.9;
+      }
+    }
+    .video {
+      aspect-ratio: 1/1;
+      width: 50%;
+      video {
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// MediaQueries View-2
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .view-2 {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: flex-start;
+    // position: relative;
+
+    .top-heading {
+      width: 60%;
+      position: sticky;
+      padding-top: 2rem;
+      top: 0;
+      flex-direction: column;
+      height: 80vh;
+      // background-color: rebeccapurple;
+      // gap: 3rem;
+      display: flex;
+
+      p {
+        @include light-weight-font();
+      }
+
+      h1 {
+        font-weight: normal;
+        line-height: 5.2vw;
+        width: 100%;
+        font-size: 6.5rem;
+        font-weight: 100;
+        opacity: 0.9;
+      }
+      button {
+        cursor: pointer;
+        height: 3rem;
+        width: 20rem;
+        margin-top: auto;
+      }
+    }
+
+    .row {
+      height: 235vh;
+      background-color: #dadada;
+      width: 1.5px;
+      margin: 0 2rem;
+    }
+
+    .bottom-heading {
+      // position: sticky;
+      // position: fixed;
+      // justify-content: flex-end;
+      // align-items: center;
+      flex-direction: column;
+      gap: 1.2rem;
+      display: flex;
+      width: 40%;
+
+      p {
+        color: rgba(0, 0, 0, 0.808);
+        margin-top: 1rem;
+      }
+
+      .row {
+        background-color: rgba(0, 0, 0, 0.801);
+        height: 1px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//MediaQueries View-3
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .view-3 {
+    display: flex;
+
+    .text {
+      width: 100%;
+      p {
+        @include light-weight-font();
+      }
+
+      h1 {
+        line-height: 5.8vw;
+        // font-weight: normal;
+        width: 80%;
+        font-size: 6.5rem;
+        font-weight: 100;
+        opacity: 0.9;
+      }
+    }
+    h2 {
+      width: 40%;
+      line-height: -5px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+//MediaQueries View-4
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .view-4 {
+    width: 100%;
+    display: flex;
+
+    .leftside {
+      width: 60%;
+      h1 {
+        display: block;
+        font-weight: 200;
+        color: rgba(0, 0, 0, 0.852);
+        font-size: 3rem;
+      }
+    }
+
+    .row {
+      margin: 0 2rem;
+      background-color: #dadada;
+      width: 2.5px;
+      height: initial;
+    }
+
+    .rightside {
+      display: flex;
+
+      .elem {
+        margin: 2rem;
+        // border-bottom: 2.5px solid #dadada;
+        // border-right: 2.5px solid #dadada;
+      }
+
+      .upper {
+        .row {
+          background-color: #dadada;
+          height: 1.5px;
+          margin-top: 1rem;
+          width: initial;
+        }
+      }
+
+      .lower {
+        .row {
+          background-color: #dadada;
+          height: 1.5px;
+          margin-top: 1rem;
+          width: initial;
+        }
+      }
+    }
+
+    hr {
+      display: none;
+    }
+  }
+}
+
+//MediaQueries View-5 Footer
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .fylla {
+      width: 30%;
+      .button {
+        p:hover {
+          text-align: center;
+          font-style: normal;
+          color: white;
+          background-color: black;
+        }
+      }
+
+      h1 {
+        font-weight: 900;
+      }
+
+      .rowi {
+        display: none;
+      }
+    }
+    p {
+      transition: all cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    p:hover {
+      cursor: pointer;
+      font-style: italic;
+      // font: italic;
+      // font-weight: 600;
+    }
+    .Pages {
+      button {
+        // margin-right: -.5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        padding: 0.4rem 1.5rem;
+      }
+    }
+
+    .rowi {
+      background-color: #dadada;
+      width: 1px;
+      height: 20rem;
+      // display: none;
+    }
+  }
+}
